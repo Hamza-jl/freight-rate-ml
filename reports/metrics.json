@@ -1,0 +1,46 @@
+{
+  "n_train_rows": 48000,
+  "n_corrupted_labels": 677,
+  "backtest_mean": {
+    "Baseline: rate/mile by equipment x distance band": {
+      "MAE": 78.643,
+      "MAPE": 3.527,
+      "RMSE": 108.755
+    },
+    "LightGBM, raw features": {
+      "MAE": 76.66,
+      "MAPE": 3.307,
+      "RMSE": 106.318
+    },
+    "LightGBM, final features": {
+      "MAE": 51.015,
+      "MAPE": 2.214,
+      "RMSE": 82.488
+    }
+  },
+  "holdout_sep_oct_raw_labels": {
+    "MAE": 92.09210046814815,
+    "MAPE": 4.1523440315618725,
+    "RMSE": 628.731361289328,
+    "n": 9523
+  },
+  "random_split": {
+    "MAE": 47.38466203980446,
+    "MAPE": 2.110692197577747,
+    "RMSE": 69.3416380022816,
+    "n": 9465
+  },
+  "feature_importance": {
+    "distance": 0.8288,
+    "pickup_lon": 0.0629,
+    "delivery_lon": 0.0433,
+    "quote_signal": 0.0351,
+    "quote_signal_dev": 0.0122,
+    "equipment": 0.01,
+    "delivery_lat": 0.0039,
+    "pickup_lat": 0.0021,
+    "weight": 0.0015,
+    "day_of_week": 0.0001,
+    "market_index_dev": 0.0
+  }
+}

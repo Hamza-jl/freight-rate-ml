@@ -1,0 +1,10 @@
+fold,model,MAE,MAPE,RMSE,n
+train Jan-Jun -> test Jul-Aug,Baseline: rate/mile by equipment x distance band,81.85330229595053,3.6288651617568943,113.98876014418198,9538
+train Jan-Jun -> test Jul-Aug,"LightGBM, raw features",58.705018114992704,2.645052930553188,87.52871948567768,9538
+train Jan-Jun -> test Jul-Aug,"LightGBM, final features",61.45528761853497,2.616441428189482,100.86045094603665,9538
+train Jan-Jul -> test Aug-Sep,Baseline: rate/mile by equipment x distance band,76.62903906919553,3.4677555975180225,105.99216569389615,9297
+train Jan-Jul -> test Aug-Sep,"LightGBM, raw features",81.60582349901243,3.5247673003758084,112.87509806837156,9297
+train Jan-Jul -> test Aug-Sep,"LightGBM, final features",55.626131075534076,2.4049164617491776,94.61296726322324,9297
+train Jan-Aug -> test Sep-Oct,Baseline: rate/mile by equipment x distance band,77.44646870720794,3.484548413716614,106.28356698513682,9379
+train Jan-Aug -> test Sep-Oct,"LightGBM, raw features",89.66951356177103,3.752632965691848,118.55051530629403,9379
+train Jan-Aug -> test Sep-Oct,"LightGBM, final features",35.96423326487135,1.6195283001118315,51.98959896652833,9379
